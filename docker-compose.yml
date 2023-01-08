@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  dev-db:
+    image: postgres:13
+    ports:
+      - 5436:5432
+    environment:
+      POSTGRES_USER: damilola
+      POSTGRES_PASSWORD: 2905damilola
+      POSTGRES_DB: restaurant-manager
+
+  test-db:
+    image: postgres:13
+    ports:
+      - 5437:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 2905damilola
+      POSTGRES_DB: restaurant-manager
